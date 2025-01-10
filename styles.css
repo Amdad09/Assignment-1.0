@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", serif;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 38px 0;
+}
+
+/* Header part */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.primary-btn {
+  order: 1px solid rgb(0, 106, 80);
+  border-radius: 8px;
+  /* padding: 15px 30px 15px 30px; */
+  width: 130px;
+  height: 48px;
+  color: rgb(0, 106, 80);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.banner {
+  border-radius: 24px;
+  background: rgb(198, 228, 214);
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  padding: 80px 80px;
+  margin: 50px 0;
+}
+
+.bangladesh {
+  color: rgba(14, 14, 14, 0.5);
+  font-family: Fira Sans;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.banner-content > * {
+  margin-bottom: 0.75em;
+}
+
+.banner-title {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.explore {
+  border-radius: 8px;
+  background: rgb(0, 106, 80);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 17px 34px 17px 34px;
+  border: none;
+}
+
+/* Main part  */
+main {
+  padding: 2em 0;
+}
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.description {
+  color: rgba(14, 14, 14, 0.7);
+}
+
+.vision-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.vision {
+  border-radius: 16px;
+  background: rgba(84, 144, 245, 0.2);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 325px;
+  width: 410px;
+}
+
+.vision-btn {
+  background-color: rgb(84, 144, 245);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.modern-box {
+  background-color: rgb(247, 235, 207);
+}
+.energy-box {
+  background-color: rgb(198, 228, 214);
+}
+.energy-btn {
+  background-color: rgb(9, 161, 92);
+}
+.modern-btn {
+  background-color: rgb(255, 194, 57);
+}
+.text-grow {
+  display: flex;
+  flex-grow: 1;
+}
+
+.vision-container {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+/* Quotetion part  */
+.quote {
+  padding: 3em 1.5em;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  background: url("./assets/quote-bg.png") no-repeat 22px 20px;
+  margin: 2em 0 5em 0;
+}
+
+.author {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0.75em 0 0.25em 0;
+  display: inline-block;
+}
+
+.topics > * {
+  margin-bottom: 16px;
+}
+.topics > * :last-child {
+  margin-bottom: 0;
+}
+
+.news {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2em;
+  padding: 3em;
+  border-radius: 1.5em;
+  border: 2px solid black;
+  align-items: center;
+  margin-top: 2em;
+}
+
+#news-img-reverse {
+  display: flex;
+  gap: 2em;
+  padding: 3em;
+  border-radius: 1.5em;
+  border: 2px solid black;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.news-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.topics + img {
+  border-radius: inherit;
+}
+.time {
+  margin-left: 0.75em;
+}
