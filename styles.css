@@ -7,13 +7,32 @@
   font-family: "Fira Sans", serif;
 }
 
-body {
-  max-width: 1280px;
+/* header,main{
+  width: 1080px;  
   margin: 0 auto;
-  padding: 38px 0;
 }
 
-/* Header part */
+body >*{
+  background-color: rgb(248, 245, 245);
+}
+
+body >*:last-child{
+  background: none;
+} */
+
+body {
+  background-color: rgb(248, 245, 245);
+}
+
+header, main {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #fff;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -114,6 +133,7 @@ main {
 .modern-box {
   background-color: rgb(247, 235, 207);
 }
+/* rgb(228, 198, 198) */
 .energy-box {
   background-color: rgb(198, 228, 214);
 }
@@ -142,6 +162,8 @@ main {
   background: rgb(255, 255, 255);
   background: url("./assets/quote-bg.png") no-repeat 22px 20px;
   margin: 2em 0 5em 0;
+  /* box-shadow: 0 4px 8px 0 black; */
+  background-color: #fff;
 }
 
 .author {
@@ -191,4 +213,104 @@ main {
 }
 .time {
   margin-left: 0.75em;
+}
+
+/* Donate section  */
+.donate-content {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin: 5em 0;
+  text-align: center;
+}
+.donate-container {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+.donate-box {
+  padding: 1em;
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 40px;
+  font-weight: 700;
+  margin: 1.5em 0;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.donate-box:hover {
+  background-color: rgb(198, 228, 214);
+}
+
+.input-container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+  margin-bottom: 2em;
+}
+
+.input-container input {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 20px 40px 20px 40px;
+}
+
+.placeholder {
+  position: absolute;
+  top: 12px;
+  left: 45%;
+}
+
+/* Subscribe Newsletter */
+.subscribe-container {
+  text-align: center;
+  background-color: rgb(198, 228, 214);
+  padding: 80px 100px;
+  border-radius: 24px;
+}
+
+.email {
+  padding: 19px 40px;
+  width: 50%;
+  margin-right: 0;
+  border-radius: 8px 0px 0px 8px;
+  outline: none !important;
+  border: none;
+}
+
+.subscription-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+.subscribe-btn {
+  border-radius: 0px 8px 8px 0px;
+  background: rgb(0, 106, 80);
+  margin-left: -6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 17px 34px 17px 34px;
+  border: none;
+}
+
+footer{
+  text-align: center;
+}
+.footer-text {
+  border-bottom: 1px solid rgba(14, 14, 14, 0.1);
+  padding-bottom: 3em;
+}
+.social-site{
+  margin: 3em;
+}
+
+.instagram{
+  margin: 0 23px;
 }
