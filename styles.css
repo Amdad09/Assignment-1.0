@@ -24,8 +24,9 @@ body {
   background-color: rgb(248, 245, 245);
 }
 
-header, main {
-  width: 1080px;
+header,
+main {
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -37,6 +38,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
 }
 
 .logo {
@@ -53,11 +55,25 @@ footer {
   color: rgb(0, 106, 80);
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: transparent;
+}
+
+.primary-btn:hover {
+  background-color: rgb(0, 106, 80);
+  border: none;
+  color: #fff;
 }
 
 .banner {
   border-radius: 24px;
-  background: rgb(198, 228, 214);
+  background-image: radial-gradient(
+    circle,
+    rgb(235, 154, 154),
+    rgb(171, 236, 206)
+  );
+  /* background: rgb(198, 228, 214); */
   display: flex;
   align-items: center;
   gap: 4em;
@@ -67,7 +83,6 @@ footer {
 
 .bangladesh {
   color: rgba(14, 14, 14, 0.5);
-  font-family: Fira Sans;
   font-size: 24px;
   font-weight: 500;
 }
@@ -89,6 +104,7 @@ footer {
   color: #fff;
   padding: 17px 34px 17px 34px;
   border: none;
+  cursor: pointer;
 }
 
 /* Main part  */
@@ -123,17 +139,13 @@ main {
   width: 410px;
 }
 
-.vision-btn {
-  background-color: rgb(84, 144, 245);
-  color: #fff;
-  cursor: pointer;
-  border: none;
+.explore:hover{
+  background-color: none;
 }
 
 .modern-box {
   background-color: rgb(247, 235, 207);
 }
-/* rgb(228, 198, 198) */
 .energy-box {
   background-color: rgb(198, 228, 214);
 }
@@ -187,7 +199,7 @@ main {
   gap: 2em;
   padding: 3em;
   border-radius: 1.5em;
-  border: 2px solid black;
+  background: rgb(255, 255, 255);
   align-items: center;
   margin-top: 2em;
 }
@@ -197,7 +209,7 @@ main {
   gap: 2em;
   padding: 3em;
   border-radius: 1.5em;
-  border: 2px solid black;
+  background: rgb(255, 255, 255);
   align-items: center;
   margin-top: 2em;
 }
@@ -300,17 +312,17 @@ main {
   border: none;
 }
 
-footer{
+footer {
   text-align: center;
 }
 .footer-text {
   border-bottom: 1px solid rgba(14, 14, 14, 0.1);
   padding-bottom: 3em;
 }
-.social-site{
+.social-site {
   margin: 3em;
 }
 
-.instagram{
+.instagram {
   margin: 0 23px;
 }
