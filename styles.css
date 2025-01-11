@@ -7,19 +7,6 @@
   font-family: "Fira Sans", serif;
 }
 
-/* header,main{
-  width: 1080px;  
-  margin: 0 auto;
-}
-
-body >*{
-  background-color: rgb(248, 245, 245);
-}
-
-body >*:last-child{
-  background: none;
-} */
-
 body {
   background-color: rgb(248, 245, 245);
 }
@@ -97,14 +84,23 @@ footer {
 }
 
 .explore {
+  color: rgb(0, 106, 80);
+  border: 2px solid currentColor;
   border-radius: 8px;
-  background: rgb(0, 106, 80);
+  background: transparent;
   font-size: 18px;
   font-weight: 600;
-  color: #fff;
   padding: 17px 34px 17px 34px;
-  border: none;
   cursor: pointer;
+  transition: 0.5s ease;
+  
+}
+
+.explore:hover{
+  background-color: rgb(0, 106, 80);
+  color: #fff;
+  border: 2px solid rgb(0, 106, 80);
+  /* border: none; */
 }
 
 /* Main part  */
@@ -154,7 +150,14 @@ main {
   background-color: none;
 } */
 .digital-btn{
+  background-color: transparent;
+  color: rgb(84, 144, 245);
+  border: 2px solid currentColor;
+}
+.digital-btn:hover{
   background-color: rgb(84, 144, 245);
+  color: #fff;
+  border: 2px solid rgb(84, 144, 245);
 }
 .modern-box {
   background-color: rgb(247, 235, 207);
@@ -163,11 +166,27 @@ main {
   background-color: rgb(198, 228, 214);
 }
 .energy-btn {
+  background-color: transparent;
+  color: rgb(9, 161, 92);
+  border: 2px solid currentColor;
+}
+.energy-btn:hover{
   background-color: rgb(9, 161, 92);
+  color: #fff;
+  border: 2px solid rgb(9, 161, 92);
 }
+
 .modern-btn {
-  background-color: rgb(255, 194, 57);
+  background-color: transparent;
+  color: rgb(252, 183, 21);
+  border: 2px solid currentColor;
 }
+.modern-btn:hover{
+  background-color: rgb(255, 194, 57);
+  color: #fff;
+  border: 2px solid rgb(255, 194, 57);
+}
+
 .text-grow {
   display: flex;
   flex-grow: 1;
@@ -338,7 +357,7 @@ main {
   border: none;
   cursor: pointer;
 }
-
+/* footer section  */
 footer {
   text-align: center;
   padding: 3em 0;
