@@ -139,10 +139,23 @@ main {
   width: 410px;
 }
 
-.explore:hover{
-  background-color: none;
+.vision-btn {
+  width: 130px;
+  height: 45px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: .5px;
 }
 
+/* .explore:hover{
+  background-color: none;
+} */
+.digital-btn{
+  background-color: rgb(84, 144, 245);
+}
 .modern-box {
   background-color: rgb(247, 235, 207);
 }
@@ -171,11 +184,10 @@ main {
   padding: 3em 1.5em;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
-  background: rgb(255, 255, 255);
-  background: url("./assets/quote-bg.png") no-repeat 22px 20px;
+  background-color: #fff;
+  background:#fff url("./assets/quote-bg.png") no-repeat 22px 20px;
   margin: 2em 0 5em 0;
   /* box-shadow: 0 4px 8px 0 black; */
-  background-color: #fff;
 }
 
 .author {
@@ -220,6 +232,9 @@ main {
   font-weight: 700;
 }
 
+.news-btn{
+  background-color: rgb(0, 106, 80);
+}
 .topics + img {
   border-radius: inherit;
 }
@@ -259,31 +274,42 @@ main {
 }
 
 .input-container {
-  position: relative;
   margin: 0 auto;
   width: 80%;
   border-bottom: 1px solid rgba(14, 14, 14, 0.15);
   margin-bottom: 2em;
+  outline: none;
+}
+
+[type *='e']{
+  font-size: 18px;
+  color: rgba(14, 14, 14, 0.7);
 }
 
 .input-container input {
   width: 100%;
   background: rgb(255, 255, 255);
   padding: 20px 40px 20px 40px;
+  outline: none;
+  border: none;
 }
 
-.placeholder {
-  position: absolute;
-  top: 12px;
-  left: 45%;
+.input-container input::placeholder{
+  color: rgba(14, 14, 14, 0.3);
+  text-align: center;
 }
 
 /* Subscribe Newsletter */
 .subscribe-container {
   text-align: center;
-  background-color: rgb(198, 228, 214);
+  background-image: radial-gradient(
+    circle,
+    rgb(235, 154, 154),
+    rgb(171, 236, 206)
+  );
   padding: 80px 100px;
   border-radius: 24px;
+  margin-bottom: 2.5em;
 }
 
 .email {
@@ -308,16 +334,20 @@ main {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  padding: 17px 34px 17px 34px;
+  padding: 20px 34px 20px 34px;
   border: none;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
+  padding: 3em 0;
 }
 .footer-text {
   border-bottom: 1px solid rgba(14, 14, 14, 0.1);
-  padding-bottom: 3em;
+  padding-bottom: 1em;
+  width: 1120px;
+  margin: 0 auto;
 }
 .social-site {
   margin: 3em;
