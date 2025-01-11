@@ -158,9 +158,10 @@ main {
   background-color: rgb(84, 144, 245);
   color: #fff;
   border: 2px solid rgb(84, 144, 245);
+  transition: .5s ease;
 }
 .modern-box {
-  background-color: rgb(247, 235, 207);
+  background-color: rgb(247, 207, 207);
 }
 .energy-box {
   background-color: rgb(198, 228, 214);
@@ -169,6 +170,7 @@ main {
   background-color: transparent;
   color: rgb(9, 161, 92);
   border: 2px solid currentColor;
+  transition: .5s ease;
 }
 .energy-btn:hover{
   background-color: rgb(9, 161, 92);
@@ -178,13 +180,14 @@ main {
 
 .modern-btn {
   background-color: transparent;
-  color: rgb(252, 183, 21);
+  color: rgb(252, 21, 21);
   border: 2px solid currentColor;
+  transition: .5s ease;
 }
 .modern-btn:hover{
-  background-color: rgb(255, 194, 57);
+  background-color: rgb(252, 21, 21);
   color: #fff;
-  border: 2px solid rgb(255, 194, 57);
+  border: 2px solid rgb(252, 21, 21);
 }
 
 .text-grow {
