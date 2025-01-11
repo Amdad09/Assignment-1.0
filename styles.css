@@ -351,7 +351,8 @@ main {
 }
 .subscribe-btn {
   border-radius: 0px 8px 8px 0px;
-  background: rgb(0, 106, 80);
+  background: rgb(1, 145, 109);
+  /* opacity: .8; */
   margin-left: -6px;
   font-size: 18px;
   font-weight: 600;
@@ -359,7 +360,13 @@ main {
   padding: 20px 34px 20px 34px;
   border: none;
   cursor: pointer;
+  transition: .5s ease;
 }
+
+.subscribe-btn:hover{
+  background: rgb(0, 106, 80);
+}
+
 /* footer section  */
 footer {
   text-align: center;
